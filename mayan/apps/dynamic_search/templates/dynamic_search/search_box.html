@@ -40,8 +40,13 @@
                         {% endif %}
                         <span class="input-group-btn">
                             {% if setting_disable_simple_search == False %}
-                                <button class="btn btn-default" type="submit">{% trans 'Search' %}</button>
-                                {% endif %}
+			    	<style>
+                                    .grey {color: #ffffff;
+				    background-color: #474747 !important;
+				    border-color: #474747 !important;}
+				</style>
+                                    <button class="btn btn-default grey" type="submit" background-color="#474747" !important border-color="#474747" !important>{% trans 'Search' %}</button>
+				{% endif %}
                             <a class="btn btn-primary" href="" id="btnSearchAdvanced" >                {% if setting_disable_simple_search == False %}{% trans 'Advanced' %}{% else %}{% trans 'Advanced search' %}{% endif %}</a>
                         </span>
                     </div>
